@@ -13,7 +13,7 @@ exps_clipfit/
 exps_sam2/
 exps_sam2clip/
 exps_sam2port/
-*.out/
+*.out
 
 # Distribution / packaging
 .Python

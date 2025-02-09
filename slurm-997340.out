@@ -1,0 +1,361 @@
+pybullet build time: Nov 28 2023 23:45:17
+Save path for results: /home/a/acw799/cliport/exps_clipfit/packing-boxes-pairs-seen-colors-clipfit-n10-train/checkpoints/
+Evaluating: ['steps=00040-val_loss=0.00021970.ckpt', 'steps=00080-val_loss=0.00017495.ckpt', 'steps=00120-val_loss=0.00018325.ckpt', 'steps=00160-val_loss=0.00018578.ckpt', 'steps=00200-val_loss=0.00017620.ckpt']
+[2025-02-09 13:39:31,313][root][INFO] - Loaded checkpoint sucessfully
+[2025-02-09 13:39:31,854][root][INFO] - Loaded ViT-H-14 model config.
+[2025-02-09 13:39:38,899][root][INFO] - Loading pretrained ViT-H-14 weights (laion2b_s32b_b79k).
+Attn FCN: conceptfusion_sam2
+[2025-02-09 13:40:27,427][root][INFO] - Loaded checkpoint sucessfully
+[2025-02-09 13:40:27,579][root][INFO] - Loaded ViT-H-14 model config.
+[2025-02-09 13:40:34,271][root][INFO] - Loading pretrained ViT-H-14 weights (laion2b_s32b_b79k).
+[2025-02-09 13:40:41,249][root][INFO] - Loaded checkpoint sucessfully
+[2025-02-09 13:40:41,416][root][INFO] - Loaded ViT-H-14 model config.
+[2025-02-09 13:40:47,965][root][INFO] - Loading pretrained ViT-H-14 weights (laion2b_s32b_b79k).
+Transport FCN: <class 'cliport.models.conceptfusion_sam2.conceptfusion_sam2'>, <class 'cliport.models.conceptfusion_sam2.conceptfusion_sam2_kernel'>
+[2025-02-09 13:40:53,647][root][INFO] - Loaded checkpoint sucessfully
+[2025-02-09 13:40:53,803][root][INFO] - Loaded ViT-H-14 model config.
+[2025-02-09 13:41:00,313][root][INFO] - Loading pretrained ViT-H-14 weights (laion2b_s32b_b79k).
+Agent: packing-boxes-pairs-seen-colors-clipfit-n50, Logging: False
+Loaded: /home/a/acw799/cliport/exps_clipfit/packing-boxes-pairs-seen-colors-clipfit-n10-train/checkpoints/steps=00040-val_loss=0.00021970.ckpt
+Test: 1/50
+[2025-02-09 13:42:23,008][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:42:23,160][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:42:25,272][root][INFO] - Image embeddings computed.
+/gpfs/home/a/acw799/sam2/sam2/modeling/sam/transformer.py:271: UserWarning: Memory efficient kernel not used because: (Triggered internally at ../aten/src/ATen/native/transformers/cuda/sdp_utils.cpp:723.)
+  out = F.scaled_dot_product_attention(q, k, v, dropout_p=dropout_p)
+/gpfs/home/a/acw799/sam2/sam2/modeling/sam/transformer.py:271: UserWarning: Memory Efficient attention has been runtime disabled. (Triggered internally at ../aten/src/ATen/native/transformers/sdp_utils_cpp.h:495.)
+  out = F.scaled_dot_product_attention(q, k, v, dropout_p=dropout_p)
+/gpfs/home/a/acw799/sam2/sam2/modeling/sam/transformer.py:271: UserWarning: Flash attention kernel not used because: (Triggered internally at ../aten/src/ATen/native/transformers/cuda/sdp_utils.cpp:725.)
+  out = F.scaled_dot_product_attention(q, k, v, dropout_p=dropout_p)
+/gpfs/home/a/acw799/sam2/sam2/modeling/sam/transformer.py:271: UserWarning: Expected query, key and value to all be of dtype: {Half, BFloat16}. Got Query dtype: float, Key dtype: float, and Value dtype: float instead. (Triggered internally at ../aten/src/ATen/native/transformers/sdp_utils_cpp.h:98.)
+  out = F.scaled_dot_product_attention(q, k, v, dropout_p=dropout_p)
+/gpfs/home/a/acw799/sam2/sam2/modeling/sam/transformer.py:271: UserWarning: CuDNN attention kernel not used because: (Triggered internally at ../aten/src/ATen/native/transformers/cuda/sdp_utils.cpp:727.)
+  out = F.scaled_dot_product_attention(q, k, v, dropout_p=dropout_p)
+/gpfs/home/a/acw799/sam2/sam2/modeling/sam/transformer.py:271: UserWarning: The CuDNN backend needs to be enabled by setting the enviornment variable`TORCH_CUDNN_SDPA_ENABLED=1` (Triggered internally at ../aten/src/ATen/native/transformers/cuda/sdp_utils.cpp:496.)
+  out = F.scaled_dot_product_attention(q, k, v, dropout_p=dropout_p)
+/home/a/acw799/.local/lib/python3.10/site-packages/torch/nn/modules/module.py:1562: UserWarning: Flash Attention kernel failed due to: No available kernel. Aborting execution.
+Falling back to all available kernels for scaled_dot_product_attention (which may have a slower speed).
+  return forward_call(*args, **kwargs)
+[2025-02-09 13:42:45,159][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:42:45,258][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:42:45,278][root][INFO] - Image embeddings computed.
+[2025-02-09 13:42:49,398][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:42:49,527][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:42:49,547][root][INFO] - Image embeddings computed.
+[2025-02-09 13:42:53,634][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:42:53,727][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:42:53,753][root][INFO] - Image embeddings computed.
+[2025-02-09 13:42:57,855][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:42:57,961][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:42:57,981][root][INFO] - Image embeddings computed.
+The number of original masks: 37
+The number of filtered masks: 13
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:43:10,808][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:43:10,811][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:43:10,831][root][INFO] - Image embeddings computed.
+[2025-02-09 13:43:27,188][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:43:27,191][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:43:27,211][root][INFO] - Image embeddings computed.
+[2025-02-09 13:43:31,338][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:43:31,341][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:43:31,361][root][INFO] - Image embeddings computed.
+[2025-02-09 13:43:35,464][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:43:35,467][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:43:35,487][root][INFO] - Image embeddings computed.
+[2025-02-09 13:43:39,618][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:43:39,621][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:43:39,641][root][INFO] - Image embeddings computed.
+The number of original masks: 33
+The number of filtered masks: 12
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:43:48,590][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:43:48,593][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:43:48,613][root][INFO] - Image embeddings computed.
+[2025-02-09 13:44:05,094][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:44:05,097][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:44:05,117][root][INFO] - Image embeddings computed.
+[2025-02-09 13:44:09,250][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:44:09,253][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:44:09,273][root][INFO] - Image embeddings computed.
+[2025-02-09 13:44:13,382][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:44:13,385][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:44:13,405][root][INFO] - Image embeddings computed.
+[2025-02-09 13:44:17,547][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:44:17,549][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:44:17,570][root][INFO] - Image embeddings computed.
+The number of original masks: 33
+The number of filtered masks: 11
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:44:26,998][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:44:27,002][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:44:27,021][root][INFO] - Image embeddings computed.
+[2025-02-09 13:44:43,547][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:44:43,550][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:44:43,570][root][INFO] - Image embeddings computed.
+[2025-02-09 13:44:47,727][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:44:47,730][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:44:47,750][root][INFO] - Image embeddings computed.
+[2025-02-09 13:44:51,875][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:44:51,878][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:44:51,898][root][INFO] - Image embeddings computed.
+[2025-02-09 13:44:56,054][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:44:56,057][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:44:56,077][root][INFO] - Image embeddings computed.
+The number of original masks: 35
+The number of filtered masks: 14
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:45:07,426][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:45:07,430][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:45:07,450][root][INFO] - Image embeddings computed.
+[2025-02-09 13:45:23,976][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:45:24,082][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:45:24,102][root][INFO] - Image embeddings computed.
+[2025-02-09 13:45:28,261][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:45:28,402][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:45:28,422][root][INFO] - Image embeddings computed.
+[2025-02-09 13:45:32,551][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:45:32,650][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:45:32,670][root][INFO] - Image embeddings computed.
+[2025-02-09 13:45:36,836][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:45:36,927][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:45:36,947][root][INFO] - Image embeddings computed.
+The number of original masks: 34
+The number of filtered masks: 12
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:45:49,109][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:45:49,112][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:45:49,132][root][INFO] - Image embeddings computed.
+[2025-02-09 13:46:05,689][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:46:05,785][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:46:05,805][root][INFO] - Image embeddings computed.
+[2025-02-09 13:46:09,943][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:46:10,035][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:46:10,054][root][INFO] - Image embeddings computed.
+[2025-02-09 13:46:14,175][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:46:14,280][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:46:14,300][root][INFO] - Image embeddings computed.
+[2025-02-09 13:46:18,446][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:46:18,555][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:46:18,575][root][INFO] - Image embeddings computed.
+The number of original masks: 30
+The number of filtered masks: 10
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:46:31,423][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:46:31,545][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:46:31,565][root][INFO] - Image embeddings computed.
+[2025-02-09 13:46:48,070][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:46:48,162][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:46:48,182][root][INFO] - Image embeddings computed.
+[2025-02-09 13:46:52,340][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:46:52,431][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:46:52,451][root][INFO] - Image embeddings computed.
+[2025-02-09 13:46:56,594][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:46:56,686][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:46:56,706][root][INFO] - Image embeddings computed.
+[2025-02-09 13:47:00,839][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:47:00,934][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:47:00,954][root][INFO] - Image embeddings computed.
+The number of original masks: 30
+The number of filtered masks: 14
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:47:12,810][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:47:12,813][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:47:12,834][root][INFO] - Image embeddings computed.
+[2025-02-09 13:47:29,278][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:47:29,281][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:47:29,300][root][INFO] - Image embeddings computed.
+[2025-02-09 13:47:33,466][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:47:33,469][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:47:33,490][root][INFO] - Image embeddings computed.
+[2025-02-09 13:47:37,625][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:47:37,629][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:47:37,649][root][INFO] - Image embeddings computed.
+[2025-02-09 13:47:41,788][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:47:41,791][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:47:41,811][root][INFO] - Image embeddings computed.
+The number of original masks: 31
+The number of filtered masks: 14
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:47:52,788][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:47:52,792][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:47:52,812][root][INFO] - Image embeddings computed.
+[2025-02-09 13:48:09,259][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:48:09,262][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:48:09,282][root][INFO] - Image embeddings computed.
+[2025-02-09 13:48:13,443][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:48:13,447][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:48:13,467][root][INFO] - Image embeddings computed.
+[2025-02-09 13:48:17,637][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:48:17,641][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:48:17,660][root][INFO] - Image embeddings computed.
+[2025-02-09 13:48:21,826][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:48:21,829][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:48:21,849][root][INFO] - Image embeddings computed.
+The number of original masks: 23
+The number of filtered masks: 9
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:48:33,772][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:48:33,888][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:48:33,908][root][INFO] - Image embeddings computed.
+[2025-02-09 13:48:50,611][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:48:50,709][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:48:50,730][root][INFO] - Image embeddings computed.
+[2025-02-09 13:48:54,858][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:48:54,958][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:48:54,978][root][INFO] - Image embeddings computed.
+[2025-02-09 13:48:59,148][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:48:59,256][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:48:59,276][root][INFO] - Image embeddings computed.
+[2025-02-09 13:49:03,410][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:49:03,512][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:49:03,532][root][INFO] - Image embeddings computed.
+The number of original masks: 27
+The number of filtered masks: 11
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:49:15,200][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:49:15,203][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:49:15,223][root][INFO] - Image embeddings computed.
+[2025-02-09 13:49:31,912][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:49:31,915][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:49:31,934][root][INFO] - Image embeddings computed.
+[2025-02-09 13:49:36,061][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:49:36,063][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:49:36,084][root][INFO] - Image embeddings computed.
+[2025-02-09 13:49:40,233][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:49:40,236][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:49:40,256][root][INFO] - Image embeddings computed.
+[2025-02-09 13:49:44,392][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:49:44,395][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:49:44,415][root][INFO] - Image embeddings computed.
+The number of original masks: 26
+The number of filtered masks: 9
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:49:56,516][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:49:56,520][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:49:56,539][root][INFO] - Image embeddings computed.
+[2025-02-09 13:50:12,989][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:50:12,992][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:50:13,012][root][INFO] - Image embeddings computed.
+[2025-02-09 13:50:17,133][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:50:17,232][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:50:17,252][root][INFO] - Image embeddings computed.
+[2025-02-09 13:50:21,390][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:50:21,485][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:50:21,505][root][INFO] - Image embeddings computed.
+[2025-02-09 13:50:25,647][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:50:25,739][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:50:25,759][root][INFO] - Image embeddings computed.
+The number of original masks: 31
+The number of filtered masks: 11
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:50:37,858][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:50:37,861][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:50:37,881][root][INFO] - Image embeddings computed.
+[2025-02-09 13:50:54,390][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:50:54,394][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:50:54,450][root][INFO] - Image embeddings computed.
+[2025-02-09 13:50:58,576][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:50:58,579][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:50:58,599][root][INFO] - Image embeddings computed.
+[2025-02-09 13:51:02,740][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:51:02,742][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:51:02,762][root][INFO] - Image embeddings computed.
+[2025-02-09 13:51:06,914][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:51:06,917][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:51:06,937][root][INFO] - Image embeddings computed.
+The number of original masks: 27
+The number of filtered masks: 11
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:51:19,301][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:51:19,304][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:51:19,324][root][INFO] - Image embeddings computed.
+[2025-02-09 13:51:35,963][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:51:35,966][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:51:35,987][root][INFO] - Image embeddings computed.
+[2025-02-09 13:51:40,110][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:51:40,119][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:51:40,139][root][INFO] - Image embeddings computed.
+[2025-02-09 13:51:44,292][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:51:44,296][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:51:44,316][root][INFO] - Image embeddings computed.
+[2025-02-09 13:51:48,465][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:51:48,468][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:51:48,488][root][INFO] - Image embeddings computed.
+The number of original masks: 29
+The number of filtered masks: 13
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:52:02,199][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:52:02,203][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:52:02,223][root][INFO] - Image embeddings computed.
+[2025-02-09 13:52:18,982][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:52:18,985][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:52:19,005][root][INFO] - Image embeddings computed.
+[2025-02-09 13:52:23,132][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:52:23,135][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:52:23,155][root][INFO] - Image embeddings computed.
+[2025-02-09 13:52:27,319][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:52:27,322][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:52:27,342][root][INFO] - Image embeddings computed.
+[2025-02-09 13:52:31,487][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:52:31,490][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:52:31,510][root][INFO] - Image embeddings computed.
+The number of original masks: 33
+The number of filtered masks: 12
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:52:44,999][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:52:45,003][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:52:45,023][root][INFO] - Image embeddings computed.
+[2025-02-09 13:53:01,849][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:53:01,852][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:53:01,872][root][INFO] - Image embeddings computed.
+[2025-02-09 13:53:05,989][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:53:05,998][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:53:06,018][root][INFO] - Image embeddings computed.
+[2025-02-09 13:53:10,183][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:53:10,186][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:53:10,206][root][INFO] - Image embeddings computed.
+[2025-02-09 13:53:14,353][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:53:14,355][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:53:14,376][root][INFO] - Image embeddings computed.
+The number of original masks: 29
+The number of filtered masks: 11
+Lang Goal: pack all the yellow and blue blocks into the brown box
+Total Reward: 0.000 | Done: False
+
+[2025-02-09 13:53:27,893][root][INFO] - For numpy array image, we assume (HxWxC) format
+[2025-02-09 13:53:27,896][root][INFO] - Computing image embeddings for the provided image...
+[2025-02-09 13:53:27,916][root][INFO] - Image embeddings computed.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 997340 ON gpu002 CANCELLED AT 2025-02-09T13:53:43 ***
+slurmstepd: error: *** STEP 997340.0 ON gpu002 CANCELLED AT 2025-02-09T13:53:43 ***

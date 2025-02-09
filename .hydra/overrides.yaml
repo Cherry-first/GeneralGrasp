@@ -1,0 +1,7 @@
+- eval_task=put-block-in-bowl-seen-colors
+- agent=clipfit
+- mode=test
+- n_demos=50
+- train_demos=10
+- checkpoint_type=test_best
+- exp_folder=exps_clipfit
